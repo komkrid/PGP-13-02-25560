@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Permit Geography Pro</string>
+    <string name="name_user">ชื่อผู้ใช้งาน</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="password_con">ยืนยันรหัสผ่าน</string>
+    <string name="tel">เบอร์โทรติดต่อ</string>
+    <string name="confirm_serve">ยืนยันการสมัคร</string>
+    <string name="type">สถานะการลงทะเบียน</string>
+
+    //ลงทะเบียน
+    <string name="name_tile">ลงทะเบียน ผู้ใช้งานทั่วไป</string>
+    <string name="name_register">ชื่อ-นามสกุล</string>
+    <string name="add">ที่อยู่ปัจจุบัน</string>
+    <string name="email">E-mail</string>
+    <string name="key">เลขบัตรประชาชน</string>
+    <string name="text1">ข้อมูลการล็อคอิน</string>
+    <string name="text2">ข้อมูลส่วนตัว</string>
+
+    //สถานะ
+    <string name="text3">ผู้ใช้งานทั่วไป</string>
+    <string name="text4">เกษตร</string>
+    <string name="title_activity_maps">Map</string>
+    //โพส เกษตร
+    <string name="text5">หัวข้อ</string>
+    <string name="text6">เขียนรายละเอียด</string>
+    <string name="text8">เพิ่มรูปภาพ</string>
+    <string name="text7">ลงประกาศ</string>
+    <string name="text9">กรุณากรอกข้อมูล</string>
+    <string name="text16">โพสโดย :</string>
+    <string name="text17">ระยะเวลา</string>
+    //หน้าแรก เกษตรกร
+    <string name="text10">โปรไฟล์ของฉัน</string>
+    <string name="text20">ประเภทสวน</string>
+    <string name="text21">จำนวนไร่</string>
+    <string name="text22">อัพโหลดรูป</string>
+
+    //รายการประกาศ
+    <string name="text11">โพส</string>
+    <string name="text12">ผู้จอง</string>
+    <string name="text13">วันที่เริ่มขาย</string>
+    <string name="text14">วันที่สิ้นสุด</string>
+    <string name="text15">สถานะ</string>
+    //spinner
+    <string-array name="dayLeng">
+        <item>1 วัน</item>
+        <item>2 วัน</item>
+        <item>3 วัน</item>
+        <item>4 วัน</item>
+        <item>5 วัน</item>
+        <item>6 วัน</item>
+        <item>7 วัน</item>
+    </string-array>
+
+    <string name="text19">รายการประกาศ</string>
+
+    <string name="name_tile1">ลงทะเบียน กลุ่มเกษตรกร</string>
+    <string name="text23">ข้อมูลสวน</string>
+
+
+</resources>
