@@ -15,9 +15,7 @@ public class Syn_advice_fruit extends AsyncTask<Void,Void,String> {
     private Context context;
     private static final String urlJSON = "http://swiftcodingthai.com/gam/php_get_advice.php";
 
-    public Syn_advice_fruit(Context context) {
-        this.context = context;
-    }
+    public Syn_advice_fruit(Context context){this.context = context;}
 
     @Override
     protected String doInBackground(Void... voids) {
@@ -27,7 +25,6 @@ public class Syn_advice_fruit extends AsyncTask<Void,Void,String> {
             Request.Builder builder = new Request.Builder();
             Request request = builder.url(urlJSON).build();
             Response response = okHttpClient.newCall(request).execute();
-
             return response.body().string();
 
         } catch (Exception e) {

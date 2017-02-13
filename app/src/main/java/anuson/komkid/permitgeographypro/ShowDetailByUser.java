@@ -27,7 +27,7 @@ public class ShowDetailByUser extends AppCompatActivity {
     //Explicit
     private String titleString, textString, startString, endString,
             statusString, urlPic1String, urlPic2String,
-            post_idString, mem_u_idString;
+            post_idString, mem_u_idString , datatimeString;
 
     private TextView titleTextView, textView, startTextView,
             endTextView, statusTextView;
@@ -86,6 +86,14 @@ public class ShowDetailByUser extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String formatteDate = df.format(c.getTime());
+        datatimeString = formatteDate;
+        Log.d("13febV1", "dataTimeString ==>" + datatimeString);
+
     }   // Main Method
 
     private void addScereToServer() {
@@ -148,7 +156,7 @@ public class ShowDetailByUser extends AppCompatActivity {
         try {
 
             AddServer addServer = new AddServer(ShowDetailByUser.this,
-                    post_idString, mem_u_idString);
+                    post_idString, mem_u_idString, datatimeString);
             addServer.execute();
 
             Log.d("21decV3", "Result addServer ==> " + addServer.get());

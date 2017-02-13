@@ -9,14 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
+import com.squareup.okhttp.Request;
 
 
 public class Fragment_1 extends Fragment {
 
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_1, container, false);
@@ -24,4 +21,6 @@ public class Fragment_1 extends Fragment {
 
 
     }
+
+
 }

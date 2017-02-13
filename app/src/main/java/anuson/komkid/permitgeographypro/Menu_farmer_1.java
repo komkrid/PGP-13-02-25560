@@ -35,6 +35,8 @@ public class Menu_farmer_1 extends FragmentActivity {
     MyPageAdapter adapter;
     ViewPager pager;
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

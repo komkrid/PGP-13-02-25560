@@ -32,24 +32,27 @@ public class Menu_user extends TabActivity {
         }//for
 
 
-        tab1.setIndicator("หน้าแรก");
+        //tab1.setIndicator("หน้าแรก");
+        tab1.setIndicator("",getResources().getDrawable(R.drawable.user));
         Intent intent= new Intent(Menu_user.this,Menu_user_1.class);
         intent.putExtra("Login",userLoginStrings);
         tab1.setContent(intent);
 
-        tab2.setIndicator("ค้นหาสวน");
+        //tab2.setIndicator("ค้นหาสวน");
+        tab2.setIndicator("",getResources().getDrawable(R.drawable.map));
         Intent intent1 = new Intent(Menu_user.this, MapsActivity.class);
         intent1.putExtra("Login", userLoginStrings);
         tab2.setContent(intent1);
 
 
-        tab3.setIndicator("การจอง");
+        //tab3.setIndicator("การจอง");
+        tab3.setIndicator("",getResources().getDrawable(R.drawable.shopping_basket));
         Intent intent2 = new Intent(Menu_user.this, Menu_user_2.class);
         intent2.putExtra("Login", userLoginStrings);
         tab3.setContent(intent2);
 
-        tab4.setIndicator("ยอดนิยม");
-        //tab3.setIndicator("",getResources().getDrawable(R.mipmap.ic_launcher));
+        //tab4.setIndicator("ยอดนิยม");
+        tab4.setIndicator("",getResources().getDrawable(R.drawable.star));
         tab4.setContent(new Intent(this, Menu_user_3.class));
 
 

@@ -18,14 +18,16 @@ public class AddServer extends AsyncTask<Void, Void, String>{
     //Explicit
     private static final String urlPHP = "http://swiftcodingthai.com/gam/add_reserv.php";
     private Context context;
-    private String post_idString, mem_u_idString;
+    private String post_idString, mem_u_idString,datatimeString;
 
     public AddServer(Context context,
                      String post_idString,
-                     String mem_u_idString) {
+                     String mem_u_idString,
+                     String datatimeString) {
         this.context = context;
         this.post_idString = post_idString;
         this.mem_u_idString = mem_u_idString;
+        this.datatimeString = datatimeString;
     }
 
     @Override
@@ -38,6 +40,7 @@ public class AddServer extends AsyncTask<Void, Void, String>{
                     .add("isAdd", "true")
                     .add("post_id", post_idString)
                     .add("mem_u_id", mem_u_idString)
+                    .add("reserv_data_ster", datatimeString)
                     .build();
             Request.Builder builder = new Request.Builder();
             Request request = builder.url(urlPHP).post(requestBody).build();
